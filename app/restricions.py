@@ -1,4 +1,5 @@
-from .models import CardType
+from ActividadVISE.app.models import CardType
+
 
 # normaliza strings (quita tildes y pone minúsculas)
 def _norm(s: str) -> str:

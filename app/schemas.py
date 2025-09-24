@@ -1,6 +1,8 @@
 from pydantic import BaseModel,Field
 from typing import Optional
-from .models import CardType,Currency
+
+from ActividadVISE.app.models import CardType, Currency
+
 
 class ClientCreate(BaseModel):
     name: str = Field(min_length=1)

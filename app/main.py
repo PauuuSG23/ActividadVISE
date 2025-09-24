@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from .routers import client, purchase
+from routers import client, purchase
 
 app = FastAPI(title="API VISE (Python + FastAPI)")
 

@@ -1,5 +1,7 @@
 from datetime import datetime, timezone
-from .models import CardType
+
+from ActividadVISE.app.models import CardType
+
 
 def _parse_utc(iso: str) -> datetime:
     # Acepta "...Z" y lo convierte a offset UTC

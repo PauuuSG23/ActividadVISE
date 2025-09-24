@@ -1,5 +1,7 @@
 from typing import Dict, TypedDict
-from .models import CardType
+
+from ActividadVISE.app.models import CardType
+
 
 class Client(TypedDict):
     clientId: int
