@@ -1,7 +1,7 @@
 from pydantic import BaseModel,Field
 from typing import Optional
 
-from ActividadVISE.app.models import CardType, Currency
+from .models import CardType, Currency
 
 
 class ClientCreate(BaseModel):

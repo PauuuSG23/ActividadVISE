@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from app.schemas import ClientCreate, ClientRegistered, RejectResponse
-from app.services import register_client
+from ..schemas import ClientCreate, ClientRegistered, RejectResponse
+from ..services import register_client
 
 router = APIRouter(prefix="/client", tags=["client"])
 

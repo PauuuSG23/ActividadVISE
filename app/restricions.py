@@ -1,4 +1,4 @@
-from ActividadVISE.app.models import CardType
+from .models import CardType
 
 
 # normaliza strings (quita tildes y pone minúsculas)

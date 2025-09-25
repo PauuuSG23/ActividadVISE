@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from ActividadVISE.app.models import CardType
+from .models import CardType
 
 
 def _parse_utc(iso: str) -> datetime:

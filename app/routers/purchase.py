@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from ActividadVISE.app.schemas import PurchaseApproved, RejectResponse, PurchaseInput
-from ActividadVISE.app.services import process_purchase
+from ..schemas import PurchaseApproved, RejectResponse, PurchaseInput
+from ..services import process_purchase
 
 router = APIRouter(prefix="/purchase", tags=["purchase"])
 

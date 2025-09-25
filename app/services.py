@@ -1,7 +1,7 @@
-from app.store import add_client, get_client, next_id
-from app.models import CardType
-from app.restrictions import is_eligible_for_card, can_purchase_in_country
-from app.benefits import compute_benefits
+from .store import add_client, get_client, next_id
+from .models import CardType
+from .restricions import is_eligible_for_card, can_purchase_in_country
+from .benefist import compute_benefits
 
 def register_client(*, name: str, country: str, monthlyIncome: float, viseClub: bool, cardType: CardType):
     ok, reason = is_eligible_for_card(
