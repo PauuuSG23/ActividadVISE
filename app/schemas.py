@@ -8,7 +8,7 @@ class ClientCreate(BaseModel):
     name: str = Field(min_length=1)
     country: str = Field(min_length=1)
     monthlyIncome: float = Field(ge=0)
-    visaClub: bool
+    viseClub: bool
     cardType: CardType
 
 class ClientRegistered(BaseModel):
