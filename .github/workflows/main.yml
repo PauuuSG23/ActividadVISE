@@ -26,12 +26,12 @@ jobs:
         run: |
           # Ajusta estos paths si tienes los Dockerfiles en carpetas distintas
           if [ "${{ inputs.service }}" = "python" ]; then
-            echo "dockerfile=Dockerfile.py" >> $GITHUB_OUTPUT   # <-- pon aquí el nombre real de tu Dockerfile de Python
-            echo "context=."                >> $GITHUB_OUTPUT   # <-- o ./python si lo tienes en subcarpeta
-            echo "container_port=8000"      >> $GITHUB_OUTPUT
+            echo "dockerfile=Dockerfile" >> $GITHUB_OUTPUT   
+            echo "context=."             >> $GITHUB_OUTPUT   
+            echo "container_port=8000"   >> $GITHUB_OUTPUT
           else
-            echo "dockerfile=Dockerfile"    >> $GITHUB_OUTPUT   # <-- Dockerfile de Node
-            echo "context=."                >> $GITHUB_OUTPUT   # <-- o ./node si lo tienes en subcarpeta
+            echo "dockerfile=Dockerfile"    >> $GITHUB_OUTPUT   
+            echo "context=."                >> $GITHUB_OUTPUT   
             echo "container_port=3000"      >> $GITHUB_OUTPUT
           fi
 
