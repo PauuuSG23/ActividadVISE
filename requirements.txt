@@ -2,3 +2,10 @@ fastapi
 uvicorn[standard]
 python-dotenv
 pytest
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-flask
+opentelemetry-exporter-otlp
+Flask
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-requests

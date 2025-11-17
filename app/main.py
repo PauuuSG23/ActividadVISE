@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from app.routers.client import router as client_router
@@ -6,6 +9,7 @@ from app.routers.purchase import router as purchase_router
 from app.routers.client import router as client_router
 from app.routers.purchase import router as purchase_router
 from app.telemetry import init_tracing
+
 
 app = FastAPI(title="API VISE (Python + FastAPI)")
 
